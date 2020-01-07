@@ -1,13 +1,10 @@
+// This program reads in a list of even numbers (such as 2, 24, 8, 6) 
+// and compute the total of the numbers on the list. The list is ended with a sentinel value.
+
+
 #include<iostream>
-#include<string>
 
-/*
-Write a loop that will read in a list of even numbers (such as 2, 24, 8, 6) 
-and compute the total of the numbers on the list. The list is ended with a sentinel value.
-Among other things, you must decide what would be a good sentinel value to use.
-*/
-
-using namespace std;
+using std::cout; using std::cin; using std::endl;
 
 int main()
 {
@@ -25,7 +22,5 @@ int main()
 	}
 
 	cout << "The sum of the list of even numbers= " << Sum << endl;
-
-
 
 }
