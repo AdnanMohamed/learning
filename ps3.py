@@ -1,4 +1,4 @@
-# This file is changed it is not the original
+# This file was changed violently!
 # 6.0001 Problem Set 3
 #
 # The 6.0001 Word Game
@@ -33,7 +33,7 @@ def load_words():
     Depending on the size of the word list, this function may
     take a while to finish.
     """
-    
+    print("Hello World")
     print("Loading word list from file...")
     # inFile: file
     inFile = open(WORDLIST_FILENAME, 'r')
@@ -56,6 +56,7 @@ def get_frequency_dict(sequence):
     
     # freqs: dictionary (element_type -> int)
     freq = {}
+    print("just wanted to make some changes")
     for x in sequence:
         freq[x] = freq.get(x,0) + 1
     return freq
@@ -78,6 +79,7 @@ def get_word_score(word, n):
     appropriately. 
 
 	The score for a word is the product of two components:
+<<<<<<< HEAD
 
 	The first component is the sum of the points for letters in the word.
 	The second component is the larger of:
@@ -367,3 +369,5 @@ def play_game(word_list):
 if __name__ == '__main__':
     word_list = load_words()
     play_game(word_list)
+=======
+>>>>>>> testBranch
