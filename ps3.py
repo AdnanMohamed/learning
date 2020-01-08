@@ -1,4 +1,3 @@
-#This file is not the original. Changes have been made.
 # 6.0001 Problem Set 3
 #
 # The 6.0001 Word Game
@@ -53,7 +52,7 @@ def get_frequency_dict(sequence):
     sequence: string or list
     return: dictionary
     """
-    
+    # Hello World
     # freqs: dictionary (element_type -> int)
     freq = {}
     print("just wanted to make some changes")
