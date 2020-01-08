@@ -53,7 +53,7 @@ def get_frequency_dict(sequence):
     sequence: string or list
     return: dictionary
     """
-    
+    # Hello World
     # freqs: dictionary (element_type -> int)
     freq = {}
     print("just wanted to make some changes")
@@ -79,7 +79,6 @@ def get_word_score(word, n):
     appropriately. 
 
 	The score for a word is the product of two components:
-<<<<<<< HEAD
 
 	The first component is the sum of the points for letters in the word.
 	The second component is the larger of:
@@ -369,5 +368,3 @@ def play_game(word_list):
 if __name__ == '__main__':
     word_list = load_words()
     play_game(word_list)
-=======
->>>>>>> testBranch
