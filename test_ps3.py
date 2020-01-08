@@ -4,26 +4,6 @@ from ps3 import *
 # Test code
 #
 
-def test_get_word_score():
-    """
-    Unit test for get_word_score
-    """
-    failure=False
-    # dictionary of words and scores
-    words = {("", 7):0, ("it", 7):2, ("was", 7):54, ("weed", 6):176,
-             ("scored", 7):351, ("WaYbILl", 7):735, ("Outgnaw", 7):539,
-             ("fork", 7):209, ("FORK", 4):308}
-    for (word, n) in words.keys():
-        score = get_word_score(word, n)
-        if score != words[(word, n)]:
-            print("FAILURE: test_get_word_score()")
-            print("\tExpected", words[(word, n)], "points but got '" + \
-                  str(score) + "' for word '" + word + "', n=" + str(n))
-            failure=True
-    if not failure:
-        print("SUCCESS: test_get_word_score()")
-
-# end of test_get_word_score
 
 
 def test_update_hand():
@@ -73,32 +53,7 @@ def test_update_hand():
         
         return # exit function
 
-    # test 3
-    handOrig = {'h': 1, 'e': 1, 'l': 2, 'o': 1}
-    handCopy = handOrig.copy()
-    word = "HELLO"
-
-    hand2 = update_hand(handCopy, word)
-    expected_hand1 = {}
-    expected_hand2 = {'h': 0, 'e': 0, 'l': 0, 'o': 0}
-    if hand2 != expected_hand1 and hand2 != expected_hand2:
-        print("FAILURE: test_update_hand('"+ word +"', " + str(handOrig) + ")")                
-        print("\tReturned: ", hand2, "\n\t-- but expected:", expected_hand1, "or", expected_hand2)
-        
-        return # exit function
-
-    if handCopy != handOrig:
-        print("FAILURE: test_update_hand('"+ word +"', " + str(handOrig) + ")")
-        print("\tOriginal hand was", handOrig)
-        print("\tbut implementation of update_hand mutated the original hand!")
-        print("\tNow the hand looks like this:", handCopy)
-        
-        return # exit function
-
-    print("SUCCESS: test_update_hand()")
-
-# end of test_update_hand
-
+   
 def test_is_valid_word(word_list):
     """
     Unit test for is_valid_word
@@ -112,7 +67,7 @@ def test_is_valid_word(word_list):
     if not is_valid_word(word, handCopy, word_list):
         print("FAILURE: test_is_valid_word()")
         print("\tExpected True, but got False for word: '" + word + "' and hand:", handOrig)
-
+        print("Just ruining Things !!:::::")
         failure = True
 
     # Test a second time to see if word_list or hand has been modified
@@ -185,7 +140,7 @@ def test_is_valid_word(word_list):
 
     if not failure:
         print("SUCCESS: test_is_valid_word()")
-
+        print("k;lgh;osdf")
 # end of test_is_valid_word
 
 def test_wildcard(word_list):
