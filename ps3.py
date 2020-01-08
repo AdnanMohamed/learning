@@ -1,3 +1,4 @@
+# This file is changed it is not the original
 # 6.0001 Problem Set 3
 #
 # The 6.0001 Word Game
@@ -123,43 +124,8 @@ def display_hand(hand):
     print()                              # print an empty line
 
 
-def deal_hand(n):
-    """
-    Returns a random hand containing n lowercase letters.
-    ceil(n/3) letters in the hand should be VOWELS (note,
-    ceil(n/3) means the smallest integer not less than n/3).
-
-    Hands are represented as dictionaries. The keys are
-    letters and the values are the number of times the
-    particular letter is repeated in that hand.
-
-    n: int >= 0
-    returns: dictionary (string -> int)
-    """
-    
-    hand={}
-    num_vowels = int(math.ceil(n / 3))
-
-    for i in range(num_vowels):
-        x = random.choice(VOWELS)
-        hand[x] = hand.get(x, 0) + 1
-    
-    for i in range(num_vowels, n):    
-        x = random.choice(CONSONANTS)
-        hand[x] = hand.get(x, 0) + 1
-        
-    for letter in hand:
-        if letter in VOWELS and hand.get(letter,0) > 1:
-            hand[letter] -= 1
-            hand['*'] = 1
-            break
-        elif(letter in VOWELS):
-            del hand[letter]
-            hand['*'] = 1
-            break
-    
-    return hand
-
+print("Isadfl;jf")
+print("Bawahahahah")
 #
 # Problem #2: Update a hand by removing letters
 #
@@ -227,7 +193,7 @@ def is_valid_word(word, hand, word_list):
         if(valid and word in word_list):
             return True
         else:
-            return False
+            return True
     else:
         for i in VOWELS:
             if(f'{word[:index]}{i}{word[index+1::]}' in word_list):
