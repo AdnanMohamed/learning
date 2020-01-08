@@ -1,6 +1,4 @@
-// This program reads in a list of even numbers (such as 2, 24, 8, 6) 
-// and compute the total of the numbers on the list. The list is ended with a sentinel value.
-
+// This change is from another-branch
 
 #include<iostream>
 
