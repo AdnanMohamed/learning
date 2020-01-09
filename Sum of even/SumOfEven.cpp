@@ -1,11 +1,12 @@
 // This change is from another-branch
-
+// before stash
 #include<iostream>
 
 using std::cout; using std::cin; using std::endl;
 
 int main()
 {
+	cout<<"Before Stash" << endl;
 	int Number, Sum=0;
 
 	cout << "Enter the list of even number and if it's finished enter an odd number\n";
