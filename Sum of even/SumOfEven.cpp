@@ -21,5 +21,6 @@ int main()
 
 	cout << "The sum of the list of even numbers= " << Sum << endl;
 	cout << "This change is from master branch" <<endl;
+	cout << "This change is after the first draft demo" <<endl;
 
 }
