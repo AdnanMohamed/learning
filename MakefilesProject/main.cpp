@@ -5,12 +5,13 @@
  * ----------------------------------------------------------------
  */
 
-#include <iostream.h>
+#include <iostream>
 #include "Point.h"
 #include "Rectangle.h"
 
 int main()
 {
+    using namespace std;
     int x, y;
 
     cout << "Please enter x and y value for point p1: ";
